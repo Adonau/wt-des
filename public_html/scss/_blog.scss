@@ -1,0 +1,259 @@
+.blog {
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 0 2px 0 #000;
+
+  &__text {
+    text-align: center;
+    width: 80%;
+
+    padding: 10px;
+    margin-bottom: 20px;
+
+    font-size: 1em;
+  }
+
+  &__title {
+    line-height: 35px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 0 60px;
+    font-size: 1.2em;
+
+    &::after,
+    &::before {
+      top: 11px;
+    }
+  }
+
+  &__container-list {
+    position: relative;
+
+    min-height: 300px;
+
+    margin-top: 40px;
+    padding-top: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background: linear-gradient(to right, transparent, $text-color, transparent);
+    }
+  }
+
+  &__item {
+    width: 260px;
+    height: 50px;
+
+    margin: 5px 10px;
+  }
+
+  &__link {
+    align-items: center;
+
+    padding: 5px;
+    width: 100%;
+
+    transition: 0.5s all ease;
+
+    border: 1px solid $border-color;
+
+    &:hover {
+      background-color: $gold-text;
+    }
+
+    &:hover .blog__link-span {
+      color: $brand-color;
+    }
+
+    &:hover .fa {
+      color: $brand-color;
+      border-color: $brand-color;
+    }
+  }
+
+  &__link-span {
+    color: $elem_text-color;
+  }
+
+  .fa-arrow-circle-left,
+  .fa-arrow-circle-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid $border-color;
+
+    font-size: 1.2em;
+
+    transition: 0.5s all ease;
+  }
+
+  &__link-span {
+    margin: 10px;
+    transition: 0.5s all ease;
+  }
+
+  &__list-left {
+    align-items: flex-end;
+
+    & .blog__link {
+      justify-content: flex-end;
+    }
+  }
+
+  &__button {
+    color: $server-color;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__text-intro {
+    margin: 20px 0;
+
+    text-align: center;
+    font-size: 0.9em;
+    color: $gold-text;
+  }
+
+  &__text-container {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border: 1px dashed #261b13;
+  }
+
+  &__text-container-column {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text-container-inner {
+    width: 50%;
+    margin: 0 5px;
+  }
+
+  &__text-list {
+    margin-bottom: 10px;
+  }
+
+  &__text-item {
+    font-size: 0.9em;
+    color: $title-color;
+
+    b {
+      color: $gold-text;
+    }
+  }
+
+  &__text-quest {
+    width: 50%;
+    margin: 0 5px;
+    font-size: 0.9em;
+    color: $title-color;
+
+    b {
+      color: $gold-text;
+    }
+  }
+
+  &__image-container {
+    width: 50%;
+    margin: 0 5px;
+  }
+
+  &__image-quest {
+    width: 50%;
+    margin: 0 5px;
+    border: 1px solid $border-color;
+  }
+
+  &__text-container-column {
+    & .blog__text-quest {
+      width: 100%;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    & .blog__image-container {
+      width: 100%;
+
+      & .blog__image-quest {
+        width: 100%;
+        margin: 0;
+        border: none;
+      }
+    }
+
+    & .blog__image-container-tr {
+      & .blog__image-quest {
+        width: 33%;
+      }
+    }
+  }
+
+  &__text-container-inner {
+    .blog__text-quest {
+      width: 100%;
+    }
+  }
+
+  &__image-container-vr {
+    width: 50%;
+    margin: 0 5px;
+    border: 1px solid $border-color;
+
+    & .blog__image-quest {
+      width: 100%;
+      border: none;
+      margin: 0;
+    }
+  }
+
+  &__list-question {
+    width: 50%;
+
+    li {
+      list-style: decimal;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      color: $other-text-color;
+    }
+
+    b {
+      color: $gold-text;
+    }
+  }
+
+  &__button-quest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 200px;
+    height: 40px;
+
+    margin: 5px;
+
+    border: 1px solid $border-color;
+    transition: 0.3s all ease;
+
+    &:hover {
+      background-color: $gold-text;
+      color: $brand-color;
+    }
+  }
+}

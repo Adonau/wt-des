@@ -1,0 +1,735 @@
+* {
+    box-sizing: border-box;
+    color: #5E4D3D;
+    margin: 0;
+    padding: 0;
+    font-family: Oswald;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 400
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #060606 inset !important;
+    -webkit-text-fill-color: #5E4D3D !important;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gray--border {
+    background-color: #0B0B0D;
+    border: 1px solid #261B13
+}
+
+.dark--border {
+    background-color: #060606;
+    border: 1px solid #261B13
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #060606;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background-color: #060606;
+    border: 1px solid #261B13;
+    padding: 10px;
+}
+
+.page h1 {
+    font-size: 1.2em;
+    color: #B9960C;
+    margin-bottom: 10px;
+}
+
+.page h2 {
+    align-self: center;
+    margin-bottom: 20px;
+    color: #B9960C;
+    font-size: 1.2em;
+}
+
+/* начало стилей */
+.wrapper--content {
+    padding: 10px;
+    height: 100%;
+}
+
+.wrapper--pages {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    padding: 10px;
+    border-bottom: 1px solid #261B13
+}
+
+.wrapper--button-logout {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.button-logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #0B0B0D;
+    outline: none;
+    border: 1px solid #261B13;
+    font-size: 1em;
+    transition: .3s ease all;
+}
+
+.button-logout:hover {
+    cursor: pointer;
+    background-color: #B9960C;
+    color: #060606;
+}
+
+.inner--content-part {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 100%;
+}
+
+.aside {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.aside--nav {
+    width: 200px;
+    padding: 10px;
+}
+
+.aside--nav-list {
+    align-items: center;
+    width: 100%;
+}
+
+.aside--nav-item {
+    width: 100%;
+    margin-bottom: 5px;
+    box-shadow: 0 0 5px 1px #000;
+}
+
+.aside--nav-link {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: #060606;
+    border: 1px solid #261B13;
+}
+
+.drop--item-list {
+    position: relative;
+}
+
+.list--down {
+    z-index: 10;
+    position: absolute;
+    left: 170px;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #0B0B0D;
+    border: 1px solid #261B13;
+    box-shadow: -3px 10px 5px 3px #000;
+    transform: translateX(100px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease transform, .3s ease visibility, .5s ease opacity;
+}
+
+.drop--item-list:hover .list--down {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.list--down>.aside--nav-item {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.list--down>:last-child.aside--nav-item {
+    margin-bottom: 0;
+}
+
+.aside--nav-link:hover {
+    cursor: pointer;
+    background-color: #B9960C;
+    color: #060606;
+}
+
+.drop--item-list:hover span {
+    background-color: #B9960C;
+    color: #0B0B0D;
+}
+
+/* индексная страница */
+.page--index {
+    justify-content: space-around;
+    padding: 30px 5px;
+}
+
+.wrapper--date-end {
+    align-items: center;
+    width: 300px;
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #060606;
+    border: 1px solid #7e0707;
+}
+
+.date--end-title {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #7e0707;
+    background-color: #0B0B0D;
+    box-shadow: 0 0 5px 2px #000 inset;
+    font-size: 1.2em;
+    color: #7e0707;
+}
+
+.date--end-item {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px dashed #7e6955;
+    text-transform: uppercase;
+    color: #7e6955;
+}
+
+.date--end-img {
+    width: 120px;
+    height: 200px;
+    margin-top: 10px;
+    background-size: cover;
+}
+
+.date--main-img {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    background-size: cover;
+}
+
+/* сервер лист */
+.page--servers {
+    padding: 10px;
+}
+
+.breadcrumb {
+    display: flex;
+}
+
+.breadcrumb li {
+    width: 130px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 5px 1px #000;
+}
+
+.breadcrumb li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: #060606;
+    border: 1px solid #261B13;
+}
+
+.breadcrumb li a:hover {
+    background-color: #B9960C;
+    color: #060606;
+}
+
+/* главная таблица и другие*/
+#p0 {
+    padding: 10px;
+    border: 1px solid #261B13;
+}
+
+.btn-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    outline: none;
+    color: #B9960C;
+    background-color: #060606;
+    border: 1px solid #261B13;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 1px #000;
+}
+
+.btn-success:hover {
+    cursor: pointer;
+    background-color: #B9960C;
+    color: #060606;
+}
+
+.grid-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary,
+.summary b {
+    color: #7e6955;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.wrapper--search {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: #0B0B0D;
+    border: 1px solid #261B13;
+    padding: 10px;
+}
+
+.wrapper--search div:nth-child(1),
+.filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper--search div:nth-child(1) div,
+.filters div {
+    text-align: center;
+    width: 150px;
+}
+
+.wrapper--search div:nth-child(1) div:nth-child(1),
+.filters div:nth-child(1) {
+    width: 20px;
+}
+
+.wrapper--search div:nth-child(1) div:nth-child(8),
+.filters div:nth-child(8) {
+    display: none;
+}
+
+.filters input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: 1px solid #261B13;
+    background-color: #0B0B0D;
+    box-shadow: 0 0 5px 2px #000 inset;
+}
+
+/* списки серверов */
+.wrapper--result-table {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #0B0B0D;
+    border: 1px solid #261B13;
+    padding: 10px 10px 0 10px;
+}
+
+.list--server {
+    position: relative;
+    justify-content: space-between;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #5e4330;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #060606;
+    box-shadow: 0 0 5px 2px #000;
+}
+
+.list--server:last-child {
+    margin-bottom: 10px;
+}
+
+.list--server-item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: min-content;
+    border: 1px solid #261B13;
+    color: #7e6955;
+}
+
+.list--server-item:nth-child(1) {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: #060606;
+    border: 1px solid #261B13;
+    box-shadow: 2px 3px 5px 1px #000;
+}
+
+.list--server-item:nth-child(2) {
+    color: #060606;
+    background-color: #B9960C;
+    text-transform: uppercase;
+}
+
+.list--server-item:last-child {
+    align-self: center;
+    position: absolute;
+    top: -10px;
+    right: -30px;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    height: 80px;
+    background-color: #060606;
+    border: 1px solid #261B13;
+    box-shadow: -2px 3px 5px 1px #000;
+}
+
+/* разные стили открыто не открыто */
+.phavorit--server {
+    background-color: #ced6e0;
+    color: #060606;
+}
+
+.top--server {
+    background-color: #da6d20;
+    color: #060606;
+}
+
+.vip--server {
+    background-color: #AC8D6F;
+    color: #060606;
+}
+
+.open {
+    background-color: #5E4D3D;
+    color: #060606;
+}
+
+.pay--ok {
+    background-color: #116e38;
+    color: #060606;
+}
+
+.pay--end {
+    background-color: #7c1e13;
+    color: #060606;
+}
+
+/* форма серверов и общие элемента формы */
+.title--center-gold {
+    align-self: center;
+    color: #B9960C;
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 50%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #261B13;
+    background-color: #0B0B0D;
+    box-shadow: 0 0 5px 2px #000 inset;
+    font-size: 1em;
+}
+
+.control-label,
+.help-block {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 30px;
+}
+
+.form-group textarea {
+    height: 300px !important;
+}
+
+/* обззор */
+.detail-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #261B13;
+    background-color: #060606;
+    padding: 10px;
+}
+
+.btn-primary,
+.btn-danger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    outline: none;
+    background-color: #060606;
+    border: 1px solid #261B13;
+    box-shadow: 0 0 5px 1px #000;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    cursor: pointer;
+    background-color: #B9960C;
+    color: #060606;
+}
+
+.detail-view>ul {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 5px 0;
+    border: 1px solid #261B13;
+    background-color: #060606;
+    padding: 10px;
+}
+
+.detail-view>ul>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #261B13;
+    background-color: #0B0B0D;
+}
+
+.detail-view>ul>li:first-child {
+    width: 25%;
+    background-color: #060606;
+}
+
+/* изображения в регистрации */
+.wrap--banner-add {
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #261B13;
+}
+
+.add--wrap--input {
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #261B13;
+    margin-right: 20px;
+}
+
+#uploadform-imagefile {
+    background-color: #060606;
+    border: 1px solid #261B13;
+    padding: 5px;
+}
+
+.wrapper--image {
+    align-self: center;
+    width: 600px;
+    height: 300px;
+    background-color: #060606;
+    border: 1px solid #261B13;
+}
+
+.wrapper--image a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* цвет формы и вью */
+
+.detail-color-pavorite input,
+.detail-color-pavorite select,
+.detail-color-pavorite label,
+.detail-color-pavorite ul li {
+    border-color: #ced6e0;
+    color: #ced6e0;
+}
+
+.detail-color-top input,
+.detail-color-top select,
+.detail-color-top label,
+.detail-color-top ul li {
+    border-color: #da6d20;
+    color: #da6d20;
+}
+
+.detail-color-vip input,
+.detail-color-vip select,
+.detail-color-vip label,
+.detail-color-vip ul li {
+    border-color: #AC8D6F;
+    color: #AC8D6F;
+}
+
+.icon {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #261B13;
+}
+
+.page--form textarea {
+    width: 80%;
+}
+
+.pages--site-attr {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #B9960C
+}
+
+.pages--site-attr .control-label {
+    font-size: 1.1em;
+}
+
+.wrapper--button-h {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    width: 40%;
+    border: 1px solid #B9960C
+}
+
+.h--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    background-color: #B9960C;
+    color: #060606;
+    transition: .3s all ease;
+}
+
+.h--button:hover {
+    cursor: pointer;
+    box-shadow: 5px 10px 10px 3px #000;
+}
+
+.clear {
+    width: 80px;
+}
+
+/* сервера */
+
+.wrapper--section-input {
+    border: #261B13 1px solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.inner--input {
+    justify-content: space-between;
+}
+
+.inner--input>.form-group {
+    width: 49%;
+}
+
+.inner--input .form-control {
+    width: 100%;
+}
+
+/*  */
+.seo_widget {
+    justify-content: space-between;
+
+}
+
+.seo_list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.seo_item {
+    flex-wrap: wrap;
+    width: 33%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #261B13;
+    list-style: square;
+}
+
+.seo_item-name {
+    text-transform: uppercase;
+    color: #B9960C;
+}
+
+.seo_item-h1 {
+    margin: 10px 0;
+    padding-left: 5px;
+    border: 1px solid #7e6955;
+    font-size: .8em;
+    color: #7e6955;
+}
+
+.seo_item-h2 {
+    border: 1px solid #261B13;
+    font-size: .8em;
+    padding-left: 5px;
+    color: red;
+}
+
+.seo_widget h1,
+.seo_widget h2,
+.seo_widget h3 {
+    align-self: auto;
+    color: #5E4D3D;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}

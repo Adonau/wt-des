@@ -1,0 +1,32 @@
+/* все инпуты форм на сайте */
+.form-control {
+    line-height: 35px;
+
+    padding: 0;
+    padding-left: 5px;
+
+    outline: none;
+    background-color: transparent;
+    border: $border-color 1px solid;
+    
+    font-size: 1.1em;
+    text-transform: lowercase;
+    transition: 0.4s ease all;
+}
+
+.form-control:hover,
+.form-control:focus {
+    border-color: #77614d;
+}
+
+.has-error > .control-label {
+    color: $red_danger;
+}
+
+.has-error > .form-control {
+    border-color: $red_danger;
+}
+
+.help-block {
+    color: $red_danger;
+}

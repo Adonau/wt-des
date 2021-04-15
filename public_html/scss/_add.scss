@@ -1,0 +1,265 @@
+/* страница добавления серверов */
+
+.add_container {
+    z-index: 1;
+    margin-top: 10px;
+  }
+  
+  .page_add {
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 2px 0 #000;
+    margin-top: 0;
+  }
+
+  .add_title {
+    align-self: center;
+    margin-top: 5px;
+    padding: 0 60px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    line-height: 35px;
+  }
+  
+  .form--headline:before,
+  .form--headline:after {
+    top: 11px;
+  }
+
+  .add_simple-title {
+    align-self: center;
+    line-height: 40px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0 50px;
+    font-size: 1.2em;
+  }
+  
+  .add_rules_area-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .add_rules-container {
+    margin-right: 10px;
+    padding: 10px;
+    width: 55%;
+    flex-shrink: 0;
+  }
+  
+  .add_rules-list {
+    justify-content: space-between;
+    background-color: $brand-color;
+    padding: 10px;
+    border: 1px solid $border-color;
+    width: 100%;
+    height: 100%;
+    list-style: square;
+  }
+  
+  .add_rules-item {
+    align-items: center;
+    font-size: 0.9em;
+    color: $title-color;
+    list-style: square inside;
+  }
+  
+  .add_rules-link {
+    color: $gold-text;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .add_area-container {
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .add_area-inner {
+    padding: 10px;
+  }
+  
+  .add_area-text {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+ 
+  .add_area-icon {
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .add_area-icon_text {
+    color: $gold-text;
+    margin-right: 20px;
+  }
+  
+  .add_area-icon_image {
+    height: 50px;
+    box-shadow: 0 0 2px 1px #000;
+  }
+
+  #add_textarea {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    box-shadow: 0 0 15px 2px $brand-color inset;
+    background-color: $second-color;
+    border: 1px solid $other-text-color;
+    font-size: 0.9em;
+    color: $other-text-color;
+  }
+  
+  .add_forms-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .add_main-form-container {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .add_form {
+    width: 100%;
+  }
+  
+  .add_input-container {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+
+    & > .form-group {
+      align-self: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+
+    & > .form-group:last-child {
+      margin-bottom: 0;
+    }
+
+    & > .form-group > .control-label {
+      width: 25%;
+    }
+
+    &  > .form-group > .form-control {
+      width: 50%;
+    }
+
+    & > .form-group > .help-block {
+      width: 25%;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  
+  .nice-select {
+    text-transform: capitalize;
+  }
+  
+  .add_checkbox-container {
+    justify-content: space-between;
+    width: 35%;
+    height: 200px;
+    padding: 10px;
+
+    & .form-group {
+      display: flex;
+      width: 80%;
+    }
+
+    & .control-label > input {
+      box-shadow: 0 0 15px 0 $second-color inset;
+      transform: scale(1.1);
+    }
+  }
+  
+  .add_checkbox-list {
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+  
+ .add_detail-container {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .add_detail-form {
+    padding: 10px;
+
+    & > p {
+      margin-bottom: 10px;
+      font-size: 0.95em;
+      color: $title-color;
+    }
+  }
+ 
+  .detail_form {
+    justify-content: space-between;
+    margin-top: 10px;
+
+    & .form-group {
+      display: flex;
+      flex-direction: column;
+      width: 34%;
+      margin-right: 10px;
+    }
+
+    & .form-group:last-child {
+      margin-right: 0;
+    }
+
+    & .control-label {
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      text-align: center;
+    }
+
+    & .form-control {
+      resize: none;
+      width: 100%;
+      height: 150px;
+    }
+
+    & .help-block {
+      display: none;
+    }
+  }
+
+  .add_button {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    font-size: 1.1em;
+    cursor: pointer;
+  } 
+
+  .ui-icon {
+    cursor: pointer;
+  }

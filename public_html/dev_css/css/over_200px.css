@@ -1,0 +1,242 @@
+@media screen and (max-width: 500px) {
+    .breadcrubs {
+        align-self: flex-start
+    }
+
+    .page--advert li,
+    .page--advert p {
+        font-size: .9em
+    }
+
+    .blog--list {
+        width: 70%
+    }
+
+    .btn--quest {
+        width: 40%
+    }
+
+    .content_button {
+        width: 90%;
+    }
+
+    .havenott--servers {
+        font-size: 1em;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+
+    .wrapper,
+    .footer {
+        padding: 0;
+        border: none;
+        background-color: transparent
+    }
+
+    .headline {
+        font-size: 1em
+    }
+
+    .contacts--form-wrap .form-group {
+        width: 100% !important
+    }
+
+    .page--contacts p {
+        font-size: .9em !important;
+        text-align: center
+    }
+
+    .contacts--section {
+        flex-direction: column
+    }
+
+    .contact--item,
+    .requisites--item {
+        margin: 0;
+        align-self: center
+    }
+
+    .contact--icq,
+    .requisites--usd {
+        margin-top: 15px
+    }
+
+    .aside_container-list {
+        width: 80%
+    }
+
+    .page--blog p {
+        font-size: .9em !important;
+        text-align: center
+    }
+
+    .advert--heading {
+        padding: 0 40px
+    }
+
+    .footer_contact-wrap {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .server--link {
+        padding: 0
+    }
+
+    .server--item-icon>i {
+        margin-top: 2px;
+        font-size: .8em !important
+    }
+
+    .server--item-name {
+        width: 37%;
+        margin-left: 3px;
+        font-size: .7em
+    }
+
+    .wsimple_server>.server--item-name {
+        margin-left: 25px
+    }
+
+    .icon--wrap {
+        width: 18%
+    }
+
+    .server--item-money>i {
+        font-size: .7em
+    }
+
+    .server--item-rate {
+        margin-right: 0
+    }
+
+    .server--item-date {
+        font-size: .6em
+    }
+
+    .header {
+        margin-bottom: 5px;
+    }
+
+    .heading--title {
+        font-size: .8em
+    }
+
+    .breadcrubs_span {
+        font-size: .7em
+    }
+
+    .image--header-link {
+        background-position: center 0
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .wolf--page h2 {
+        font-size: .9em;
+        padding: 0 30px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .server--item-date {
+        width: 18%;
+        font-size: .6em
+    }
+
+    .server--item-chronicle {
+        width: 20%;
+        font-size: .65em
+    }
+
+    .server--item-dp>.fa-plus-square {
+        margin-top: 4px
+    }
+
+    .server--item-lang {
+        width: 12px;
+        height: 12px
+    }
+
+    .server--container-headline {
+        font-size: .8em
+    }
+
+    .wrap--detail-checkbox {
+        flex-direction: column
+    }
+
+    .page--add {
+        padding: 5px
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .server--item-icon,
+    .server--item-money {
+        display: none
+    }
+
+    .server--item-name {
+        width: 42%
+    }
+
+    .wsimple_server>.server--item-name {
+        margin-left: 3px
+    }
+
+    .server--item-lang {
+        width: 12px;
+        height: 12px
+    }
+
+    .server--item-rate {
+        width: 11%;
+        font-size: .5em
+    }
+
+    .server--item-chronicle {
+        width: 22%
+    }
+
+    .server--item-date {
+        width: 20%;
+        font-size: .6em
+    }
+
+    .image--text {
+        margin: 0;
+        width: 100%;
+        box-shadow: none;
+        border: none
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .header,
+    .wrapper,
+    .footer {
+        min-width: 300px
+    }
+
+    .headline {
+        padding: 0 40px;
+        line-height: 30px
+    }
+
+    .headline:before {
+        right: 8px;
+        top: 8px
+    }
+
+    .headline:after {
+        left: 8px;
+        top: 8px
+    }
+}

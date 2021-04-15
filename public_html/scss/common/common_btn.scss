@@ -1,0 +1,67 @@
+/* все кнопки на сайте кроме асайдовских */
+.btn--site {
+    height: 35px;
+
+    background-color: $brand-color;
+    border: 1px solid $border-color;
+    box-shadow: 0 0 2px 0 #000;
+
+    transition: 0.3s ease all;
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+
+        transition: 0.3s ease all;
+    }
+
+    & a:hover {
+        color: $brand-color;
+    }
+
+    &:hover {
+        border-color: $gold-text;
+        background-color: $gold-text;
+        color: $brand-color;
+    }
+}
+
+/* кнопка перемотки вверх */
+
+.buttton-up {
+    z-index: 5;
+    display: none;
+
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+
+    background-color: $brand-color;
+    border: 1px solid $text-color;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: -3px 5px 4px 1px #000;
+    transition: 0.3s all ease;
+    animation: colortop 3s infinite;
+
+    & i {
+        padding: 5px 10px;
+        font-size: 2em;
+        transition: 0.3s all ease;
+        color: $text-color;
+    }
+  
+    &:hover{
+        border-color: $title-color;
+    }
+  
+    &  i:hover{
+        color: $title-color;
+    }
+  }

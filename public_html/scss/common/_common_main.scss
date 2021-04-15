@@ -1,0 +1,109 @@
+// clear style
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+input,
+label,
+button,
+b {
+    margin: 0;
+    padding: 0;
+
+    font-weight: normal;
+}
+textarea,
+span,
+button,
+a,
+input {
+    color: $text-color;
+    font-family: Oswald;
+}
+// flex style
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// border style
+.gray--border {
+    background-color: $second-color;
+}
+
+.darck--border {
+    background-color: $brand-color;
+}
+
+.gray--border,
+.darck--border {
+    border: 1px solid #261b13;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    font-family: Oswald;
+    color: $text-color;
+    background-color: $brand-color;
+}
+
+// стили страниц
+.page {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+// общий враппер
+.wrapper {
+    z-index: 1;
+    width: 100%;
+    max-width: 1330px;
+    padding: 10px;
+    box-shadow: 0 0 2px 0 #000;
+}
+
+.main {
+    width: 100%;
+}
+
+.main__inner {
+    width: 100%;
+    height: 100%;
+}
+
+.body_scroll {
+    overflow: hidden;
+}
+
+@import "common_scroll";
+@import "common_title";
+@import "common_btn";
+@import "common_form";
+@import "common_alert";

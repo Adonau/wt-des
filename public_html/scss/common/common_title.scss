@@ -1,0 +1,38 @@
+/* стили всех заголовков */
+.headline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to right, $brand-color, $second-color, #0d0d0d, $second-color, $brand-color);
+    box-shadow: 0 2px 2px 0 #000;
+    border: 1px solid $border-color;
+
+    color: $title-color;
+    text-shadow: 0 2px 2px #000;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+
+        width: 12px;
+        height: 12px;
+
+        background: radial-gradient($brand-color 20%, #1c1108);
+        border: 1px solid #1b140e;
+        border-radius: 50%;
+        box-shadow: 0 0 5px 1px #000;
+    }
+
+    &::before {
+        right: 10px;
+        top: 10px;
+    }
+
+    &::after {
+        left: 10px;
+        top: 10px;
+    }
+}

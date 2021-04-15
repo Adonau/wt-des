@@ -1,0 +1,109 @@
+@media screen and (max-width: 450px) {
+  .headline {
+    font-size: 1em; }
+  .wrapper {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none; }
+  .header {
+    flex-direction: column;
+    margin-bottom: 0; }
+  .logo {
+    align-self: flex-start;
+    margin-bottom: 5px; }
+  .breadcrubs__title {
+    font-size: 1em; }
+  .breadcrubs__list {
+    width: 100%; }
+  .breadcrubs__span {
+    font-size: 0.7em; }
+  .header__image {
+    background-position: center 0; }
+  .main__image-wrapper {
+    display: none; }
+  .main__wrap-button-servers {
+    margin-top: 0px;
+    box-shadow: none; }
+  .aside__nav {
+    width: 96%;
+    padding: 0; }
+  .aside__item {
+    width: max-content; }
+  .aside__link {
+    padding: 0 10px; }
+  .contacts_form-container .form-group {
+    width: 100% !important; }
+  .page_contacts p {
+    font-size: 0.9em !important;
+    text-align: center; }
+  .page_blog p {
+    font-size: 0.9em; }
+  .adv_title {
+    padding: 0 40px; }
+  .footer {
+    padding: 0;
+    border: none;
+    background-color: transparent; }
+  .footer__social-inner {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 420px) {
+  .wolf--page h2 {
+    font-size: 0.9em;
+    padding: 0 30px; }
+  .text-container {
+    padding: 5px; } }
+
+@media screen and (max-width: 401px) {
+  .header__list {
+    justify-content: flex-start; }
+  .header__item {
+    margin: 0 5px; }
+  .header__link {
+    font-size: 0.8em; }
+  .server__title {
+    font-size: 0.8em; }
+  .server__url {
+    font-size: 0.8em; }
+  .server__lang-icon {
+    width: 12px;
+    height: 12px; }
+  .server__rate {
+    font-size: 0.6em; }
+  .server__chronicle {
+    font-size: 0.7em; }
+  .server__date {
+    font-size: 0.6em; }
+  .add_checkbox-container {
+    flex-direction: column; }
+  .page_add {
+    padding: 5px; } }
+
+@media screen and (max-width: 360px) {
+  .server__url-container {
+    width: 46%; }
+  .server__url {
+    font-size: 0.7em; }
+  .server__chronicle-container {
+    width: 18%; } }
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    min-width: 300px; }
+  .headline {
+    padding: 0 40px;
+    line-height: 30px; }
+  .header {
+    min-width: 300px; }
+  .headline:before {
+    right: 8px;
+    top: 8px; }
+  .headline:after {
+    left: 8px;
+    top: 8px; }
+  .footer {
+    min-width: 300px; } }
+
+/*# sourceMappingURL=450-320.css.map */

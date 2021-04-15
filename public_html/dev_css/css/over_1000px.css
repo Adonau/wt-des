@@ -1,0 +1,238 @@
+@media screen and (max-width: 1310px) {
+
+    .header,
+    .statistic--block,
+    .wrapper,
+    .footer,
+    .header--wrapper-info {
+        width: 98%
+    }
+
+    .advert--btn-section {
+        display: none
+    }
+
+    .page--add-rules-textatarea_wrap {
+        flex-direction: column
+    }
+
+    .page--add-rules_wrap {
+        margin-right: 0;
+        margin-bottom: 10px
+    }
+
+    .rules--list-item {
+        font-size: 1em;
+        margin-bottom: 10px
+    }
+
+    .rules--list-item:last-child {
+        margin-bottom: 0
+    }
+
+    .page--add-textarea_wrap {
+        width: 100%
+    }
+
+    .page--add-textarea_inner {
+        flex-direction: row
+    }
+
+    .page--add-textarea_text {
+        align-self: center;
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 0;
+        font-size: 1em
+    }
+
+    .page--add-textarea-icon_inner {
+        width: 50%
+    }
+
+    .page--add-icon_wrap {
+        justify-content: flex-end;
+        width: 100%
+    }
+
+    #icon--l2wt {
+        width: 100%;
+        height: 130px
+    }
+
+    .form--add-server {
+        flex-direction: column
+    }
+
+    .inner--main-form {
+        margin-right: 0
+    }
+
+    .wrap--detail-checkbox {
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        margin-top: 10px
+    }
+
+    .detail--checkbox-list {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%
+    }
+
+    .wrap--detail-checkbox .form-group {
+        max-width: 120px
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .wrapper {
+        flex-direction: column-reverse
+    }
+
+    .question--widget {
+        display: none
+    }
+
+    .wrapper--image {
+        min-height: 400px
+    }
+
+    .aside {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px
+    }
+
+    .aside_nav {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around
+    }
+
+    .aside_title-chronicle,
+    .aside_title-rate {
+        margin-top: 0;
+    }
+
+    .aside_container-list {
+        width: 30%
+    }
+
+    .aside--banner {
+        flex-shrink: 0;
+        margin: 0;
+        align-self: center
+    }
+
+    .news--block {
+        display: none
+    }
+
+    .statistic--list-inner {
+        flex-wrap: wrap
+    }
+
+    .statistic--list {
+        width: 24%
+    }
+
+    .statistic--list:nth-child(5) {
+        margin: 0 auto;
+        margin-top: 10px
+    }
+
+    .statistic--list:nth-child(4) {
+        margin-right: 0
+    }
+
+    .server--item-icon>.item--dropdown {
+        display: none
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .gamb--btn-wrap {
+        position: fixed;
+        z-index: 1111;
+        top: 75px;
+        right: 10px;
+        display: flex;
+        margin-bottom: 0;
+        align-self: flex-end
+    }
+
+    .header--menu {
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 200px
+    }
+
+    .header--nav {
+        z-index: 1111111;
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #060606;
+        transition: .8s ease all;
+        transform: translateX(-100%)
+    }
+
+    .header--nav-all {
+        transform: translateX(0)
+    }
+
+    .page--server {
+        flex-direction: column
+    }
+
+    .page--server-content {
+        width: 100%;
+        margin: 0
+    }
+
+    .server--content-right {
+        margin-top: 10px
+    }
+
+    .footer_link-containe {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .page--add-textarea_inner {
+        flex-direction: column
+    }
+
+    .page--add-textarea_text {
+        width: 100%
+    }
+
+    .page--add-textarea-icon_inner {
+        width: 100%
+    }
+
+    .content_container-button {
+        display: flex;
+    }
+
+    .server--content-right {
+        display: none;
+    }
+
+    .server--content-right-display {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .server--content-right-displaynone {
+        display: none;
+    }
+}

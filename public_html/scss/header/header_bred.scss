@@ -1,0 +1,49 @@
+.breadcrubs {
+  width: 100%;
+  flex-direction: column;
+
+  &__title {
+    font-size: 1em;
+    color: $gold-text;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    color: $gold-text;
+    transition: 0.3s all ease;
+  }
+
+  &__span {
+    display: flex;
+    font-size: 0.7em;
+    color: $title-color;
+    transition: 0.3s all ease;
+  }
+
+  &__item-second:before,
+  &__item-third::before,
+  &__item-four::before {
+    content: ">>";
+    display: flex;
+    align-items: center;
+
+    margin: 1px 5px 0;
+
+    color: $title-color;
+    font-size: 0.8em;
+  }
+
+  &__link:hover,
+  &__span:hover,
+  &__span-gold {
+    color: $gold-text;
+  }
+
+  &__span-gold:hover {
+    text-decoration: underline;
+  }
+}

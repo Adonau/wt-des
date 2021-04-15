@@ -1,0 +1,48 @@
+// основной заголовок
+.server--headline {
+    line-height: 35px;
+
+    margin: 20px 0 30px;
+    padding: 0 55px;
+
+    font-size: 1.1em;
+
+    &::before,
+    &::after {
+        top: 12px;
+    }
+}
+
+.server__title {
+    align-items: center;
+
+    height: 50px;
+
+    padding-left: 15px;
+
+    background-color: $second-color;
+
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    box-shadow: 0 0 4px 2px #000 inset;
+}
+
+.server__title-hight {
+    align-items: center;
+
+    margin: 0;
+
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: $elem_text-color;
+
+    & i {
+        font-size: 1.1em;
+        color: $elem_text-color;
+    }
+}
+
+.server__title-low {
+    margin: 0;
+    font-size: 0.9em;
+}

@@ -1,0 +1,16 @@
+@media screen and (max-height: 420px) and (max-width: 900px) {
+  .aside__nav {
+    width: 100%;
+    padding: 0; }
+  .aside__list {
+    margin-bottom: 6px; }
+  .aside__item {
+    width: max-content; }
+  .aside__link {
+    padding: 0 8px; }
+  .list__text .aside__link {
+    font-size: 0.8em; }
+  .list__num .aside__link {
+    font-size: 0.7em; } }
+
+/*# sourceMappingURL=420&900.css.map */

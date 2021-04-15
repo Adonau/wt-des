@@ -1,0 +1,44 @@
+#gameav_240x400, #gameav_468x60{
+	font-size: 13px;
+	overflow: hidden;
+}
+#gameav_240x400{
+    width: 240px;
+	/*height: 420px;*/	
+}
+		
+#gameav_468x60{
+    width: 468px;
+	/*height: 80px;*/
+}
+#gameav_468x60 #gameav_link, #gameav_240x400 #adv_link{
+	display: block;
+}
+#gameav_468x60 #gameav_link{
+	height:60px;
+}
+#gameav_240x400 #gameav_link{
+	height: 400px;
+}
+#gameav_links{
+	background-color: #f2f2f2;
+	color:#ffffff;
+	height:20px;
+	width:100%;
+	display: block;
+}
+#gameav_links a{
+	color: #0557AF;
+	line-height: 20px;
+}
+#gameav_links a:hover,#gameav_links a:active,#gameav_links a:focus{
+	color: #0557AF;
+}
+#gameav_links #gameav_link_left{
+	float:left;
+	text-align: left;
+}
+#gameav_links #gameav_link_right{
+	text-align: right;
+	float:right;
+}

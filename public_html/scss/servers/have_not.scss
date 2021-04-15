@@ -1,0 +1,41 @@
+.not_server {
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+
+  margin-bottom: 10px;
+  padding: 10px;
+
+  border: 1px solid $red_danger;
+}
+
+.not_server-text {
+  justify-content: center;
+  align-items: center;
+
+  & b {
+    font-size: 1.2em;
+    color: $red_danger;
+  }
+
+  & i {
+    margin-left: 5px;
+
+    font-size: 2em;
+    color: $red_danger;
+  }
+}
+
+.not_server-link {
+  margin-top: 10px;
+
+  font-size: 1em;
+  color: $elem_text-color;
+  text-decoration: underline;
+
+  transition: 0.2s color linear;
+  &:hover {
+    color: $gold-text;
+  }
+}

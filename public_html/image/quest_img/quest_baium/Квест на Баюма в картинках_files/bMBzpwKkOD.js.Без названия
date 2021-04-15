@@ -1,0 +1,10 @@
+if (typeof adv_place == 'undefined') {
+    var adv_place = "gameadv_element_22";
+}
+var adv_inner_html = '<div id="gameav_240x400"><a id="gameav_link" target="_blank" href="https://gameadv.ru/api/v1/click?url=MTE3" title="Interlude x1200"><img src="https://gameadv.ru/files/240х400.png" alt="Interlude x1200"></a></div>';
+if (document.getElementById(adv_place)) {
+	document.getElementById(adv_place).innerHTML = adv_inner_html;
+}else{
+	document.write('<div id="'+adv_place+'">'+adv_inner_html+'</div>');
+}
+document.write('<link type="text/css" rel="stylesheet" href="//gameadv.ru/api/v1/gameadv.css">');

@@ -1,0 +1,80 @@
+/* стили для страницы рекламы */
+
+.page_adv {
+  padding: 10px;
+  box-shadow: 0 0 2px 0 #000;
+}
+
+.adv_text {
+  align-self: center;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+  color: $elem_text-color;
+}
+
+.adv_section {
+  padding: 10px;
+  box-shadow: 0 0 2px 0 #000;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .server__container {
+    max-width: 500px;
+    height: 35px;
+    margin: 0;
+  }
+}
+
+.simple_a-title {
+  align-self: center;
+  margin-top: 5px;
+  padding: 0 60px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  line-height: 35px;
+}
+
+.adv_section-title {
+  align-self: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  color: $title-color;
+  padding: 5px 30px;
+}
+
+.adv_list {
+  background-color: $brand-color;
+  border: 1px solid $border-color;
+  padding: 10px;
+  height: 100%;
+}
+
+.adv_list-container {
+  padding: 10px;
+}
+
+.adv_item {
+  font-size: 1em;
+
+  span {
+    color: $gold-text;
+  }
+}
+
+.phavorit--list,
+.top--list,
+.vip--list {
+  margin-top: 15px;
+}
+
+.margin--item {
+  margin-top: 15px;
+}
+
+.danger--item {
+  color: $other-text-color;
+}

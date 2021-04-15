@@ -1,0 +1,73 @@
+// Выпадающий текст
+
+.dropdown {
+  z-index: 5;
+  position: absolute;
+  right: 50%;
+  bottom: calc(100% + 15px);
+
+  width: max-content;
+  max-width: 220px;
+
+  padding: 10px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  background-color: $brand-color;
+  border: 1px solid #33241a;
+  box-shadow: 10px 15px 4px 2px #000;
+
+  pointer-events: none;
+  transform: translateY(-25px) translateX(50%);
+  transition: 0.4s ease-in visibility, 0.3s ease opacity, 0.3s ease transform;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -21px;
+
+    width: 0;
+    height: 0;
+
+    border: 10px solid transparent;
+    border-top-color: #33241a;
+
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    line-height: 17px;
+    color: $gold-text;
+    font-size: 14px;
+  }
+
+  &__text {
+    width: 100%;
+    line-height: 16px;
+  
+    margin-top: 10px;
+  
+    color: $title-color;
+    font-size: 13px;
+  }
+}
+
+.phavorit_server .server__star-icon div {
+  color: #ced6e0;
+}
+
+.top_server .server__star-icon div {
+  color: #da6d20;
+}
+
+.vip_server .server__star-icon div {
+  color: #ac8d6f;
+}
+
+.server__element:hover > .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px) translateX(50%);
+}

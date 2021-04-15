@@ -1,0 +1,52 @@
+.main__image-wrapper {
+    position: relative;
+
+    min-height: 350px;
+
+    border: 1px solid $border-color;
+    box-shadow: 0 0 2px 0 #000;
+
+    transition: 0.6s all ease;
+  }
+
+  .main__image {
+    width: 100%;
+    min-height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 0 15px 7px #000 inset;
+  }
+
+  .main__image-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    align-self: flex-end;
+    align-items: center;
+    text-align: center;
+
+    margin: 10px;
+    padding: 10px 25px;
+
+    background-color: rgba($brand-color, 0.8);
+    border: 1px solid $border-color;
+    box-shadow: 0 0 2px 0 #000;
+
+    transition: 0.6s all ease;
+  }
+  
+  .main__image-info-title {
+    color: $gold-text;
+    font-size: 0.9em;
+  }
+  
+  .main__image-info-txt {
+    margin: 0;
+    
+    color: $elem_text-color;
+    font-size: 0.8em;
+  }

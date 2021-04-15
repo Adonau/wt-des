@@ -1,0 +1,87 @@
+/* логотип в хедере */
+.logo {
+  position: relative;
+  z-index: 0;
+
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 142px;
+  height: 48px;
+
+  margin-right: 10px;
+
+  overflow: hidden;
+
+  background-color: $gold-text;
+  border: 1px solid $gold-text;
+
+  font-size: 1.5em;
+  color: $brand-color;
+  font-family: Oswald;
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: -50px;
+    left: 0;
+
+    display: flex;
+
+    width: 100px;
+    height: 200px;
+
+    background-color: $brand-color;
+
+    transform: rotate(30deg) translateX(-22px);
+    transition: 0.6s ease all;
+  }
+
+  &__cogs {
+    align-self: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-right: 3px;
+
+    .fa {
+      font-size: 0.8em;
+      color: $gold-text;
+      transition: 5s all ease;
+    }
+  }
+
+  &__small-cogs {
+    .fa {
+      font-size: 0.5em;
+    }
+  }
+
+  &__name {
+    margin-right: 5px;
+    color: $gold-text;
+  }
+
+  &__name-second {
+    color: $brand-color;
+    transition: 1s ease all;
+  }
+
+  &:hover::before {
+    width: 200px;
+  }
+
+  &:hover .fa {
+    transform: rotate(2000deg);
+  }
+
+  &:hover &__small-cogs {
+    .fa {
+      transform: rotate(-2000deg);
+    }
+  }
+
+  &:hover &__name-second {
+    color: $gold-text;
+  }
+}

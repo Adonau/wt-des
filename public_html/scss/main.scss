@@ -1,0 +1,34 @@
+$brand-color: #060606;
+$second-color: #0c0b0b;
+$border-color: #261b13;
+$border-light: #473521;
+$inside-color: #121011;
+$gold-text: #b9960c;
+$red_color: #99152d;
+$red_danger: #990f0f;
+$server-color: #5d4c3d;
+
+$text-color: #5e4d3d;
+$title-color: #7e6650;
+$other-text-color: #88735e;
+$elem_text-color: #77614d;
+
+@import "fonts";
+
+@import "common/common_main";
+@import "header/header_main";
+@import "statistic/statistic_main";
+@import "aside/aside_main";
+@import "servers/server_main";
+@import "text/text_main";
+
+@import "blog";
+@import "contact";
+@import "advert";
+@import "add";
+
+@import "footer/footer_main";
+
+@import "media/main_media";
+
+

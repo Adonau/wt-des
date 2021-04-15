@@ -1,0 +1,71 @@
+(function(){
+	//будут запрошены два скрипта
+	//когда оба запроса завершатся, будет проверка
+	//если первый скрипт загрузился, а второй - нет, значит стоит адблок
+
+	var s1_status ;
+	var s2_status ;
+	var done = function(){
+		if(typeof(s1_status) != 'undefined' && typeof(s2_status) != 'undefined') { //оба запроса завершились
+			if(s1_status && !s2_status) { //только первый скрипт загружен
+				//adblock!
+				show_criteo();
+				new Image().src = "//counter.yadro.ru/hit;ucoz_adblock_total?r"+ escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random();
+			}
+		}
+	}
+
+	//первый скрипт
+	var s1 = document.createElement('script');
+	s1.onload = function(){
+		s1_status = true ;
+		done();
+	};
+	s1.onerror = function(){
+		s1_status = false ;
+		done();
+	};
+	s1.src = '//static.criteo.net/js/px.js?ch=1';
+	document.body.appendChild(s1);
+
+	//второй скрипт
+	var s2 = document.createElement('script');
+	s2.onload = function(){
+		s2_status = true ;
+		done();
+	};
+	s2.onerror = function(){
+		s2_status = false ;
+		done();
+	};
+	s2.src = '//static.criteo.net/js/px.js?ch=2';
+	document.body.appendChild(s2);
+
+	//вывод баннера критео
+	var show_criteo = function(){
+		new Image().src = "//counter.yadro.ru/hit;ucoz_adblock_criteo?r"+ escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random();
+
+		var cont = document.createElement('div');
+		cont.id="crt_adb_cont";
+		cont.setAttribute('style', 'text-align:center;overflow:hidden;');
+		var s = document.getElementById('crt_adb_place');
+		s.parentElement.insertBefore(cont , s);
+
+		var ifr = document.createElement('iframe');
+		ifr.setAttribute('scrolling' , 'no');
+		ifr.setAttribute('id', 'crtadbifr');
+		ifr.setAttribute('frameborder' , '0');
+		ifr.setAttribute('width' , '728');
+		ifr.setAttribute('height' , '91');
+		cont.appendChild(ifr);
+
+		var crtzoneid = adb_site_type=='narod' ? '1326591' : '1325259';
+
+		var d = ifr.contentDocument ;
+		d.open();
+		d.write('<html><head><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script></head><body style="margin:0;overflow:hidden;">');
+		d.write('<div id="crt-4efdd8f8" style="width:728px;height:90px;"></div><script type="text/javascript" src="https://static.criteo.net/js/ld/publishertag.js"></script><script>window.Criteo = window.Criteo || {};window.Criteo.events = window.Criteo.events || [];function CriteoAdblock(containerid, zoneid) {Criteo.events.push(function() {Criteo.DisplayAcceptableAdIfAdblocked({"zoneid": zoneid,"containerid": containerid,"overrideZoneFloor": false});window.addEventListener("message", function (e) {if (e.data && e.data == "criteo-adblock-passback-"+zoneid) {console.log("crt adblock: no ads");document.getElementById(containerid).style.display = "none";parent.document.getElementById("crtadbifr").style.display = "none";}else return;}, false);});}</script><script type="text/javascript">console.log("crt adblock: start ads");CriteoAdblock("crt-4efdd8f8", '+crtzoneid+');</script>');
+		d.write('</body></html>');
+		d.close();
+	};
+})() ;

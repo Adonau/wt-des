@@ -1,0 +1,64 @@
+/* кнопка навигации при маленьком разрещении */
+&__button {
+    z-index: 11111111;
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+  
+    align-self: flex-end;
+    align-items: center;
+    justify-content: space-around;
+  
+    width: 35px;
+    height: 36px;
+  
+    transition: 0.5s linear;
+  
+    border: 1px solid $border-light;
+    background-color: $brand-color;
+    box-shadow: 0 0 2px 1px #000;
+    border-radius: 1px;
+    outline: none;
+  
+    cursor: pointer;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      content: "";
+      display: flex;
+      
+      width: 70%;
+      height: 2px;
+      
+
+      background-color: $border-light;
+      transition: 0.5s all ease;
+    }
+  }
+  
+  &__button-item {
+    display: block;
+
+    width: 70%;
+    height: 2px;
+    
+    background-color: $border-light;
+    transition: 0.5s all ease;
+  }
+
+  &__button-show {
+  
+    & .header__button-item {
+      transform: translate(40px, 0px);
+    }
+  
+    &::before {
+      transform: rotate(405deg) translate(8px, 8px);
+    }
+
+    &::after {
+      transform: rotate(-405deg) translate(8px, -8px);
+    }
+  }

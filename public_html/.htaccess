@@ -1,0 +1,32 @@
+Options +FollowSymLinks
+IndexIgnore */* 
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www.line.ru.ru$ [NC]
+RewriteRule ^(.*)$ http://line.ru/$1 [R=301,L]
+
+# hide files and folders
+RedirectMatch 404 /\.git
+RedirectMatch 404 /composer\.
+RedirectMatch 404 /.bowerrc
+
+# if a directoty or a file exists, use the request directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# othervise forvard the request to index.php
+RewriteRule . index.php 
+
+
+Redirect 301 /quests-on-pets/quest-for-the-wolf http://line.ru/blog/quests-on-pets/quest-for-the-wolf
+
+Redirect 301 index.php http://line.ru/
+
+Redirect 301 /servers-type/high-budget https://line.ru/servers-type/top-servers-l2
+
+
+
+	
+
+
+

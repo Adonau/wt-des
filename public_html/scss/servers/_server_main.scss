@@ -1,0 +1,290 @@
+.page--server-content {
+  align-items: center;
+
+  width: 50%;
+
+  background: $brand-color;
+
+  border: 1px solid $border-color;
+  box-shadow: 0 0 2px 0 #000;
+}
+
+.server--content-left {
+  margin-right: 5px;
+}
+
+.server--content-right {
+  margin-left: 5px;
+}
+
+.server {
+  width: 100%;
+
+  &__container {
+    align-items: center;
+
+    height: 35px;
+
+    margin: 3px 2px;
+    padding: 0 5px;
+
+    border: 1px solid $border-color;
+    box-shadow: 0 0 4px 2px #000;
+    transition: 0.3s ease all;
+
+    &:hover {
+      z-index: 2;
+
+      border-color: #4d3f33;
+
+      box-shadow: 10px 15px 4px 2px #000;
+    }
+
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__element {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $server-color;
+  }
+
+  &__star-icon {
+    width: 22px;
+    height: 22px;
+
+    border: 1px solid transparent;
+    cursor: help;
+    i {
+      font-size: 0.9em;
+    }
+  }
+
+  &__url-container {
+    justify-content: space-between;
+
+    width: 40%;
+
+    margin-left: 8px;
+    margin-right: auto;
+  }
+
+  &__url {
+    text-transform: uppercase;
+
+    font-size: 0.9em;
+    color: $server-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__lang-icon {
+    width: 15px;
+    height: 15px;
+
+    margin-right: auto;
+    margin-left: 5px;
+
+    background-image: url(../image/icon_for_site/united-kingdom-flag-16x16.png);
+    background-size: cover;
+
+    cursor: help;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.493);
+    }
+  }
+
+  &__obt-bonus-container {
+    justify-content: space-between;
+    width: 18%;
+  }
+
+  &__obt-icon {
+    i {
+      font-size: 0.8em;
+      color: $other-text-color;
+      cursor: help;
+    }
+  }
+
+  &__bonus-icon {
+    i {
+      font-size: 1em;
+      color: $other-text-color;
+      cursor: help;
+    }
+  }
+
+  &__budget-icon {
+    width: 4%;
+
+    margin-right: 5px;
+    cursor: help;
+
+    i {
+      font-size: 14px;
+    }
+  }
+
+  &__rate {
+    justify-content: flex-start;
+
+    width: 10%;
+
+    font-size: 0.7em;
+    text-align: left;
+  }
+
+  &__chronicle-container {
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 20%;
+  }
+
+  &__chronicle {
+    font-size: 0.8em;
+  }
+
+  &__additions-icon {
+    margin-left: 4px;
+
+    cursor: help;
+
+    .fa {
+      margin-top: 3px;
+
+      color: $red_color;
+      font-size: 0.7em;
+    }
+
+    .dp--icon {
+      margin-top: 2px;
+
+      font-size: 0.7em;
+
+      font-style: normal;
+      color: $red_color;
+      pointer-events: none;
+    }
+  }
+
+  &__date {
+    justify-content: flex-end;
+
+    width: 15%;
+
+    font-size: 0.7em;
+  }
+}
+
+.wsimple_server {
+  .server__url-container {
+    margin-left: 30px;
+  }
+}
+
+.phavorit_server {
+  .server__star-icon {
+    border-color: #ced6e0;
+  }
+
+  .server__url {
+    color: #ced6e0;
+  }
+
+  .server__budget-icon {
+    .fa {
+      color: #ced6e0;
+    }
+  }
+
+  .server__star-icon {
+    .fa {
+      color: #ced6e0;
+    }
+  }
+
+  .server__element {
+    color: #ced6e0;
+  }
+
+  .server__chronicle {
+    color: #ced6e0;
+  }
+}
+
+.top_server {
+  .server__star-icon {
+    border-color: #da6d20;
+  }
+
+  .server__star-icon {
+    .fa {
+      color: #da6d20;
+    }
+  }
+  .server__budget-icon {
+    .fa {
+      color: #da6d20;
+    }
+  }
+  .server__url {
+    color: #da6d20;
+  }
+
+  .server__element {
+    color: #80674e;
+  }
+}
+
+.vip_server {
+  .server__star-icon {
+    border-color: #ac8d6f;
+  }
+
+  .server__star-icon {
+    .fa {
+      color: #ac8d6f;
+    }
+  }
+
+  .server__url {
+    color: #ac8d6f;
+  }
+
+  .server__element {
+    color: #80674e;
+  }
+}
+
+
+
+
+
+
+@import "server_image";
+@import "button_open";
+@import "server_title";
+@import "have_not";
+@import "drop_text";

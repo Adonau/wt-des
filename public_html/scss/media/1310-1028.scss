@@ -1,0 +1,263 @@
+@media screen and (max-width: 1310px) {
+    .header,
+    .header__inform,
+    .wrapper,
+    .statistic,
+    .footer {
+        width: 98%;
+    }
+
+    .advert--btn-section {
+        display: none;
+    }
+
+    .add_rules_area-container {
+        flex-direction: column;
+    }
+
+    .add_rules-container {
+        width: 100%;
+
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .add_rules-item {
+        margin-bottom: 10px;
+
+        font-size: 1em;
+    }
+
+    .add_rules-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .add_area-container {
+        width: 100%;
+    }
+
+    .add_area-inner {
+        flex-direction: row;
+    }
+
+    .add_area-text {
+        align-self: center;
+        width: 50%;
+
+        padding: 10px;
+        margin-bottom: 0;
+
+        font-size: 1em;
+    }
+
+    .add_area_icon-container {
+        width: 50%;
+    }
+
+    .add_area-inner {
+        flex-direction: row;
+    }
+
+    .add_area-icon {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #add_textarea {
+        width: 100%;
+        height: 130px;
+    }
+
+    .add_form {
+        flex-direction: column;
+    }
+
+    .add_input-container {
+        margin-right: 0;
+    }
+
+    .add_checkbox-container {
+        flex-direction: column;
+
+        width: 100%;
+        height: max-content;
+
+        margin-top: 10px;
+    }
+
+    .add_checkbox-list {
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .add_checkbox-container .form-group {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .header__button {
+        display: flex;
+    }
+
+    .header__nav {
+        z-index: 20;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 90px;
+
+        background-color: $brand-color;
+        border-bottom: 1px solid $border-color;
+        box-shadow: 0 2px 3px 1px #000;
+
+        transition: 0.8s ease all;
+        transform: translateY(-110%);
+    }
+
+    .header__list {
+        justify-content: center;
+
+        width: 100%;
+        margin: auto 0 10px 0;
+    }
+
+    .header__item {
+        margin: 0 10px;
+    }
+
+    .header__nav-transform {
+        transform: translate(0);
+    }
+
+    .header__link-add {
+        line-height: normal;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .header__link-add:hover {
+        background-color: transparent;
+        color: #b9960c;
+    }
+
+    .statistic__wrapper-list {
+        flex-wrap: wrap;
+    }
+
+    .statistic__list {
+        width: 24%;
+    }
+
+    .statistic__list:nth-child(5) {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .statistic__list:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .main__image-wrapper {
+        min-height: 400px;
+    }
+
+    .aside_empty,
+    .aside {
+        z-index: 19;
+        position: fixed;
+
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        padding-top: 100px;
+
+        transform: translateY(110%);
+        transition: 0.8s all ease;
+        border: none;
+        background-color: $brand-color;
+    }
+
+    .aside_trasform {
+        transform: translate(0);
+    }
+
+    .aside__title,
+    .aside__banner,
+    .aside__news,
+    .aside__item:last-child {
+        display: none;
+    }
+
+    .aside__nav {
+        width: 80%;
+    }
+
+    .aside__list {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .aside__item {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .page--server {
+        flex-direction: column;
+    }
+
+    .page--server-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main__wrap-button-servers {
+        display: flex;
+    }
+
+    .server--content-right {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .server--content-right-display {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .server--content-right-displaynone {
+        display: none;
+    }
+
+    .add_area-inner {
+        flex-direction: column;
+    }
+
+    .add_area-text {
+        width: 100%;
+    }
+
+    .add_area_icon-container {
+        width: 100%;
+    }
+
+    .add_area-icon {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
